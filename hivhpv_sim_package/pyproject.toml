@@ -1,0 +1,12 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "hivhpv-sim"
+version = "0.2.0"
+requires-python = ">=3.10"
+dependencies = ["numpy", "pandas", "scipy", "matplotlib", "plotly", "openpyxl", "ipywidgets", "shiny", "shinywidgets"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
